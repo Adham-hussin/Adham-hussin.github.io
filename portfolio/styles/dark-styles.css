@@ -1,0 +1,82 @@
+body
+{
+    background-image: linear-gradient(to right, #000000, #434343);
+}
+#wrapper
+{
+    background-image: url("../images/darkHome.png");
+}
+.logo
+{
+    background-image: linear-gradient(90deg, #8F1D68, #8F1D68bb, #686868bb, #686868);
+}
+#wrapper #services
+{
+    background-color: #272727;
+}
+#portfolio
+{
+    background-color: #272727;
+}
+#reviews
+{
+    background-color: #272727;
+}
+#darkMode
+{
+    background-color: #1c1c1c;
+}
+
+#wrapper #services h1
+{
+    color: #ffffff;
+}
+
+#wrapper nav a
+{
+    background-color: #8F1D68;
+}
+
+#wrapper #services #servicesWrapper div {
+    background-color: #686868;
+    color: #ffffff;
+}
+
+#wrapper #services #servicesWrapper div p {
+    color: #ffffff;
+}
+
+#wrapper #services #servicesWrapper div:nth-child(2) {
+    background-color: #8F1D68;
+}
+
+.feedback{
+    background-color: #686868;
+    color: #ffffff;
+}
+.title{
+    color: #ffffff;
+}
+
+.butt{
+  background-color:  #686868;
+}
+.butt:hover{
+  background-color: #8F1D6877;
+}
+.clicked{
+  background-color: #8F1D68;
+}
+
+.grid-container .boxcontent{
+  background-color: #686868;
+  color: #ffffff;
+}
+
+footer{
+  background-color: #272727;
+}
+
+footer .contact #contactForm #someStyle button {
+    background-color: #8F1D68;
+  }
