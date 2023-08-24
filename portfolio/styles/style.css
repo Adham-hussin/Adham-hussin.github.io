@@ -233,14 +233,8 @@ body {
 @media (max-width: 1000px) {
   .feedbacks-container {
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    padding-right: 0px;
-    padding-left: 0px;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    height: auto;
   }
 }
 
@@ -265,6 +259,12 @@ body {
   text-align: center;
   border-radius: 10px;
   line-height: 2;
+}
+@media (max-width: 1000px) {
+  .feedback {
+    width: 80%;
+    margin-bottom: 5%;
+  }
 }
 .feedback:hover {
   transform: scale(1.2);
