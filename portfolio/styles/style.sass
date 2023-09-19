@@ -163,6 +163,8 @@ body
           transition: 0.5s
 
         @media(max-width: 1000px)
+          &:hover
+            transform: translateY(0px)
           width: 80%
           margin-bottom: 5%
 
@@ -274,6 +276,10 @@ body
   padding: 10px 20px
   background-color: rgb(148, 161, 159)
   border-radius: 10px
+  @media (max-width: 1000px)
+    width: 45%
+    margin: 10px
+    font-size: 2.5rem
 
   &:hover
     background-color: #5d5cdc77
@@ -290,7 +296,21 @@ body
   justify-content: center
   align-items: center
   grid-template-columns: auto auto auto
-  grid-template-rows: 700px 700px 700px
+  grid-template-rows: 800px 800px 800px
+  @media (max-width: 1000px)
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: auto
+    width: 100%
+    justify-content: space-between
+    align-content: space-between
+  @media (min-width: 1800px) and (max-width: 2000px)
+    grid-template-columns: auto auto auto auto
+    grid-template-rows: 800px 800px 800px
+  @media (min-width: 2000px)
+    grid-template-columns: auto auto auto auto auto
+    grid-template-rows: 800px 800px
   .boxcontent
     @include cards
     width: 90%
@@ -298,11 +318,14 @@ body
     min-height: 90%
     margin: auto
     &:hover
-      transform: scale(1.15)
+      transform: scale(1.05)
       transition: 0.5s
     &:not(:hover)
       transform: scale(1)
       transition: 0.5s
+    @media (max-width: 1000px)
+      &:hover
+        transform: scale(1)
     img
       max-width: 100%
       max-height: 100%
@@ -310,6 +333,8 @@ body
       border-top-right-radius: 10px
       margin: 0px
       padding: 0px
+    .projectText
+      margin:50px
     a
       text-decoration: none
       pointer-events: none

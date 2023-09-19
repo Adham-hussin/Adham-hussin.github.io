@@ -1,15 +1,16 @@
 window.addEventListener('DOMContentLoaded', () => {
-    window.scrollBy(0,1);
-    const wrapper =document.querySelector('#wrapper');
-    const home=document.querySelector('#gthome');
-    const home2=document.querySelector('#logo');
-    const about=document.querySelector('#gtabout');
-    const services=document.querySelector('#gtservices');
-    const projects=document.querySelector('#gtportfolio');
-    const contact=document.querySelector('#gtcontact');
-    const dark=document.querySelector('#darkMode');
-    const toDark=document.querySelector('#dMode');
-    const nav=document.querySelector('nav');
+    window.scrollBy(0, 1);
+    window.scrollBy(0, -1);
+    const wrapper = document.querySelector('#wrapper');
+    const home = document.querySelector('#gthome');
+    const home2 = document.querySelector('#logo');
+    const about = document.querySelector('#gtabout');
+    const services = document.querySelector('#gtservices');
+    const projects = document.querySelector('#gtportfolio');
+    const contact = document.querySelector('#gtcontact');
+    const dark = document.querySelector('#darkMode');
+    const toDark = document.querySelector('#dMode');
+    const nav = document.querySelector('nav');
 
     const homeDiv = document.querySelector('#home');
     const servicesDiv = document.querySelector('#services');
@@ -26,15 +27,16 @@ window.addEventListener('DOMContentLoaded', () => {
     about.addEventListener('click', () => { aboutDiv.scrollIntoView({ behavior: "smooth" }); });
     projects.addEventListener('click', () => { projectsDiv.scrollIntoView({ behavior: "smooth" }); });
     contact.addEventListener('click', () => { scrollTo({ top: document.body.scrollHeight, behavior: "smooth" }); });
-    window.addEventListener('scroll', () => { 
-        if(window.scrollY > 0) {
-        nav.style.backgroundColor = '#5d5cdcdd';
-        if(!isLight){nav.style.backgroundColor = '#000000dd';}
-         }
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            nav.style.backgroundColor = '#5d5cdcdd';
+            if (!isLight) { nav.style.backgroundColor = '#000000dd'; }
+        }
         else {
-            nav.style.backgroundColor = 'transparent'; }
+            nav.style.backgroundColor = 'transparent';
+        }
         //check if at the bottom of the page
-        if(window.scrollY + window.innerHeight >= document.body.scrollHeight) { if(isLight){contact.style.color = '#feb12f';} else{contact.style.color = '#8F1D68';} } else {contact.style.color = '#fff';}
+        if (window.scrollY + window.innerHeight >= document.body.scrollHeight) { if (isLight) { contact.style.color = '#feb12f'; } else { contact.style.color = '#8F1D68'; } } else { contact.style.color = '#fff'; }
         chngClrIfInView(homeDiv, home);
         chngClrIfInView(servicesDiv, services);
         chngClrIfInView(aboutDiv, about);
@@ -42,11 +44,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     });
-    function chngClrIfInView(elementDiv, element){
-        if((elementDiv.getBoundingClientRect().top <= 100 && elementDiv.getBoundingClientRect().bottom >= 50) && !(window.scrollY + window.innerHeight >= document.body.scrollHeight))
-        {
-            if(isLight){element.style.color = '#feb12f';}
-            else{element.style.color = '#8F1D68';}
+    function chngClrIfInView(elementDiv, element) {
+        if ((elementDiv.getBoundingClientRect().top <= 100 && elementDiv.getBoundingClientRect().bottom >= 50) && !(window.scrollY + window.innerHeight >= document.body.scrollHeight)) {
+            if (isLight) { element.style.color = '#feb12f'; }
+            else { element.style.color = '#8F1D68'; }
         } else {
             element.style.color = '#fff';
         }
@@ -54,42 +55,41 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     let isLight = true;
-    dark.addEventListener('click', () => { 
-        
-        if(isLight){
-        toDark.href = 'styles/dark-styles.css';
-        document.querySelector('#darkMode img').src = 'images/light.svg' ;
-        images[0].src = 'images/ml-dark2.svg';
-        images[2].src = 'images/nlp-dark.png';
-        isLight = false;
+    dark.addEventListener('click', () => {
+
+        if (isLight) {
+            toDark.href = 'styles/dark-styles.css';
+            document.querySelector('#darkMode img').src = 'images/light.svg';
+            images[0].src = 'images/ml-dark2.svg';
+            images[2].src = 'images/desktop-dark.svg';
+            isLight = false;
         } else {
-        toDark.href = '';
-        document.querySelector('#darkMode img').src = 'images/dark.svg' ;
-        images[0].src = 'images/ml.svg';
-        images[2].src = 'images/nlp.png';
-        isLight = true;
+            toDark.href = '';
+            document.querySelector('#darkMode img').src = 'images/dark.svg';
+            images[0].src = 'images/ml.svg';
+            images[2].src = 'images/desktop.svg';
+            isLight = true;
+        }
+        window.scrollBy(0, 1);
+        window.scrollBy(0, -1);
+    });
+    dark.click();
+    let boxes = document.querySelectorAll('#servicesWrapper div');
+
+    function setHeight() {
+        let maxHeight = 0;
+        for (var i = 0; i < boxes.length; i++) {
+            if (boxes[i].offsetHeight > maxHeight) {
+                maxHeight = boxes[i].offsetHeight;
+            }
+        }
+        for (var i = 0; i < boxes.length; i++) {
+            boxes[i].style.height = maxHeight + 'px';
+
+        }
     }
-    window.scrollBy(0,1);
-     });
-     dark.click();
-     let boxes = document.querySelectorAll('#servicesWrapper div');
-     //let boxes2 = document.querySelectorAll('.feedback');
-     let maxHeight = 0;
-     //let maxHeight2 = 0;
-     for (var i = 0; i < boxes.length; i++) {
-       if (boxes[i].offsetHeight > maxHeight) {
-         maxHeight = boxes[i].offsetHeight;
-       }
-       //if (boxes2[i].offsetHeight > maxHeight2) {
-      //  maxHeight2 = boxes2[i].offsetHeight;
-      //}
-     }
-     for (var i = 0; i < boxes.length; i++) {
-       boxes[i].style.height = maxHeight + 'px';
-      // boxes2[i].style.height = maxHeight2 + 'px';
-     }
-   
-   
+    setHeight();
+
 
 
     const bt1 = document.querySelector('.butt1');
@@ -106,7 +106,7 @@ window.addEventListener('DOMContentLoaded', () => {
         clickedElement.classList.remove('clicked');
         elem.classList.add('clicked');
 
-        switch(elem) {
+        switch (elem) {
             case bt1:
                 select = 'boxcontent';
                 break;
@@ -123,19 +123,19 @@ window.addEventListener('DOMContentLoaded', () => {
                 select = 'HW';
                 break;
         }
-        
-        for(let i = 0; i < boxcont.length; i++) {
-            if(boxcont[i].classList.contains(select)) {
+
+        for (let i = 0; i < boxcont.length; i++) {
+            if (boxcont[i].classList.contains(select)) {
                 boxcont[i].classList.remove('hide');
             } else {
                 boxcont[i].classList.add('hide');
             }
         }
-        if(select != 'boxcontent') {
+        if (select != 'boxcontent') {
             grid.style.gridTemplateRows = 'auto';
         }
         else {
-            grid.style.gridTemplateRows = '700px 700px 700px';
+            grid.style.gridTemplateRows = '800px 800px 800px';
         }
     }
 
@@ -144,7 +144,7 @@ window.addEventListener('DOMContentLoaded', () => {
     bt3.addEventListener('click', () => { handleClick(bt3) });
     bt4.addEventListener('click', () => { handleClick(bt4) });
     bt5.addEventListener('click', () => { handleClick(bt5) });
-    
-    
+
+    window.addEventListener('resize', () => { setHeight(); });
 
 });

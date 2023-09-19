@@ -166,6 +166,9 @@ body {
     width: 80%;
     margin-bottom: 5%;
   }
+  #wrapper #services #servicesWrapper div:hover {
+    transform: translateY(0px);
+  }
 }
 #wrapper #services #servicesWrapper div:nth-child(2) {
   background-color: #0f3dc5;
@@ -302,6 +305,13 @@ body {
   background-color: rgb(148, 161, 159);
   border-radius: 10px;
 }
+@media (max-width: 1000px) {
+  .butt {
+    width: 45%;
+    margin: 10px;
+    font-size: 2.5rem;
+  }
+}
 .butt:hover {
   background-color: rgba(93, 92, 220, 0.4666666667);
 }
@@ -319,7 +329,30 @@ body {
   justify-content: center;
   align-items: center;
   grid-template-columns: auto auto auto;
-  grid-template-rows: 700px 700px 700px;
+  grid-template-rows: 800px 800px 800px;
+}
+@media (max-width: 1000px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+}
+@media (min-width: 1800px) and (max-width: 2000px) {
+  .grid-container {
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 800px 800px 800px;
+  }
+}
+@media (min-width: 2000px) {
+  .grid-container {
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 800px 800px;
+  }
 }
 .grid-container .boxcontent {
   width: 25%;
@@ -336,12 +369,17 @@ body {
   margin: auto;
 }
 .grid-container .boxcontent:hover {
-  transform: scale(1.15);
+  transform: scale(1.05);
   transition: 0.5s;
 }
 .grid-container .boxcontent:not(:hover) {
   transform: scale(1);
   transition: 0.5s;
+}
+@media (max-width: 1000px) {
+  .grid-container .boxcontent:hover {
+    transform: scale(1);
+  }
 }
 .grid-container .boxcontent img {
   max-width: 100%;
@@ -350,6 +388,9 @@ body {
   border-top-right-radius: 10px;
   margin: 0px;
   padding: 0px;
+}
+.grid-container .boxcontent .projectText {
+  margin: 50px;
 }
 .grid-container .boxcontent a {
   text-decoration: none;
