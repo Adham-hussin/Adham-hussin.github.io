@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
+    window.scrollBy(0,1);
     const wrapper =document.querySelector('#wrapper');
     const home=document.querySelector('#gthome');
     const home2=document.querySelector('#logo');
@@ -68,8 +69,9 @@ window.addEventListener('DOMContentLoaded', () => {
         images[2].src = 'images/nlp.png';
         isLight = true;
     }
+    window.scrollBy(0,1);
      });
-    
+     dark.click();
      let boxes = document.querySelectorAll('#servicesWrapper div');
      //let boxes2 = document.querySelectorAll('.feedback');
      let maxHeight = 0;
