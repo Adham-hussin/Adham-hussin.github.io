@@ -2,229 +2,361 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Adham Hussin - ML/NLP and Software Engineering</title>
+        <meta
+            name="description"
+            content="Portfolio of Adham Hussin, focused on ML/NLP, data systems, and software engineering."
+        >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        >
         <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" id="dMode" href="">
     </head>
     <body>
-        <div id="wrapper">
-            <nav>
-                <img src="images/logo1.png" alt="logo" id="logo" class = "logo">
-                <ul>
-                    <li id="gthome">Home</li>
-                    <li id="gtservices">Services</li>
-                    <li id="gtabout" class="hide">Reviews</li>
-                    <li id="gtportfolio">Portfolio</li>
-                    <li id="gtcontact">Contact</li>
-                </ul>
-                <a download="resume.pdf" href="files/AdhamHussinResume.pdf" id="CV">Download CV</a>
-            </nav>
-            <div id="home">
-                <div id="homeText">
-                    <h2>Hi, I'm <span id="name">Adham Hussin</span> a second year <span id="job1">Computer Engineering </span>student</h1>
-                    <p>I am a passionate and hardworking student who is always looking for new ways to improve my skills. I am also a very good team player and I am always eager to learn more.</p>
-                </div>
-                <img src="images/home.png" alt="home" id="homeImage">
-            </div>
-            <div id="services">
-                <h1 class = 'title'>Services</h1>
-                <div id="servicesWrapper">
-                    <div class="service">
-                        <img src="images/ml.svg" alt="Machine Learning">
-                        <h4>ML Models</h4>
-                        <p>ML models that can help you with various tasks, such as data analysis, prediction, optimization, and automation.<br> Can improve your customer service, increase your sales, reduce your costs, or enhance your productivity.</p> 
-                    </div>
-                    <div class="service">
-                        <img src="images/web.svg" alt="Web Development">
-                        <h4>Full Stack Web Development</h4>
-                        <p>Full stack web development services to help you build a web application from scratch or improve your existing web application. I can help you with front-end development, back-end development, and database management.</p>
-                    </div>
-                    <div class="service">
-                        <img src="images/desktop.svg" alt="Desktop">
-                        <h4>Desktop Application</h4>
-                        <p>Desktop app development solutions that can help you create a fully customized desktop application to your liking. I can assist you with user interface design, application logic, and performance optimization. I can use different programming languages that are suitable for desktop apps, especially for Windows.</p>
+        <a class="skip-link" href="#projects">Skip to content</a>
+        <div class="page" id="top">
+            <header class="site-header">
+                <div class="header-inner">
+                    <a class="logo" href="#top">Adham Hussin</a>
+                    <nav class="site-nav" aria-label="Primary">
+                        <a href="#projects">Projects</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#education">Education</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                    <div class="header-actions">
+                        <a class="btn ghost" href="files/AdhamHussinResume.pdf" download>Download CV</a>
+                        <button class="btn ghost theme-toggle" id="themeToggle" type="button">Theme: Dark</button>
+                        <a class="btn primary" href="mailto:adhamhusn@gmail.com">Email</a>
                     </div>
                 </div>
-            </div>
-        
+            </header>
 
-
-            <div id="reviews" class="hide">
-                <h1 class="title">What People Say About Us</h1>
-                <section class="feedbacks-container">
-                    <div class="feedback">
-                        <div class = 'allpics'>
-                            <img class="stars" src="images/5.jpg">
-                            <img class = 'person' src="images/per1.jpeg">
-                        </div>                    
-                        <p>Adham is a very talented and hardworking person. He is very passionate about his work and is always looking for new ways to improve his skills. He is also a very good team player and is always willing to help others.</p>
-                        <h4>John Doe</h4>
-                        <h5><i>CEO of ABC</i></h5>
-                    </div>
-                    <div class="feedback">
-                        <div class = 'allpics'>
-                            <img class="stars" src="images/5.jpg">
-                            <img class = 'person' src="images/per2.png">
-                        </div>                         
-                        <p>Adham is a friend of his friend, THE TALK ENDED</p>
-                        <h4>White Ibrahim</h4>
-                        <h5><i>Former PR Head at Zarzour Group</i></h5>
-                    </div>
-                    <div class="feedback">
-                        <div class = 'allpics'>
-                            <img class="stars" src="images/5.jpg">
-                            <img class = 'person' src="images/per3.jpg">
-                        </div>                         
-                        <p>C-EZ is a wondrous platform that wields the might of AI and computer vision to aid me in various endeavours. Whether I need to unravel an ancient rune, detect an enemy’s approach, craft a banner, C-EZ can achieve it all. It has a graceful and simple interface, a swift and precise algorithm, and a just and modest price of ten Mirians which is tenth the price of a horse.</p>
-                        <h4>Gandalf the White</h4>
-                        <h5><i>CEO of Order of The Wizards, Team Lead at The Fellowship of The Ring</i></h5>
-                    </div>
-
-                </section>
-            </div> 
-            <div id="portfolio">
-                <h1 class="title">Digital Product Showcases</h1>
-                <div class="buttons">
-                <button class="butt butt1 clicked">All</button>
-                <button class="butt butt2">AI</button>
-                <button class="butt butt3">OOP and Data Structures</button>
-                <button class="butt butt4">Web Development</button>
-                <button class="butt butt5">Hardware and Low Level Programming</button>
-                </div>
-                <div class="grid-container">
-                    <div class="boxcontent WEB">
-                        <img src="images/souq.jpeg" alt="A camel in the desert">
-                        <div class="projectText">
-                            <h3>Souq 3oqaz: The Next-Gen E-Commerce Platform</h3>
-                            <p>Developed frontend pages, components, and contributed to database design for this e-commerce application featuring auctions and barters.<br> Used: React and PostgreSQL.</p>
+            <main>
+                <section class="section hero" id="home">
+                    <div class="hero-content">
+                        <p class="kicker">ML/NLP + Software Engineering</p>
+                        <h1>Adham Hussin</h1>
+                        <p class="lead">
+                            I build ML/NLP systems and production-grade software with a QA-first mindset. My recent work
+                            spans Arabic diacritization, churn intelligence at scale, and credit risk modeling.
+                        </p>
+                        <div class="hero-tags">
+                            <span class="chip">NLP</span>
+                            <span class="chip">Data Engineering</span>
+                            <span class="chip">ML Ops</span>
+                            <span class="chip">QA Automation</span>
                         </div>
-                        <a href="https://github.com/code-crafters-cmp26/Souq-3qaz" target="_blank" class = "exists" ><img src="images/link.svg" alt=""></a>
-                    </div>
-                    <div class="boxcontent WEB">
-                        <img src="images/searchlock.jpeg" alt="sherlock holmes">
-                        <div class="projectText">
-                            <h3>Searchlock Holmes: A Multi-Threaded Search Engine</h3>
-                            <p>Developed a multithreaded search engine utilizing Java Spring Boot, Jsoup, and MongoDB. My contributions included implementing crawler components (seed initialization, duplicate detection, compactString generation, resume/start-over functionality) and the query engine with phrase search capabilities.</p>
+                        <div class="hero-cta">
+                            <a class="btn primary" href="mailto:adhamhusn@gmail.com">Start a conversation</a>
+                            <a class="btn ghost" href="https://github.com/adham-hussin/" target="_blank" rel="noopener">
+                                GitHub
+                            </a>
+                            <a class="btn ghost" href="https://linkedin.com/in/adham-hussin-866632142" target="_blank" rel="noopener">
+                                LinkedIn
+                            </a>
                         </div>
-                        <a href="https://github.com/The-White-Hats/Resumeness" target="_blank" class = "exists" ><img src="images/link.svg" alt=""></a>
+                        <ul class="hero-meta">
+                            <li>Cairo, Egypt</li>
+                            <li><a href="mailto:adhamhusn@gmail.com">adhamhusn@gmail.com</a></li>
+                            <li><a href="tel:+201093401932">+20 109 340 1932</a></li>
+                        </ul>
                     </div>
-                    <div class="boxcontent WEB">
-                        <img src="images/resume.png" alt="resume">
-                        <div class="projectText">
-                            <h3>Resumeness: Resume Builder</h3>
-                            <p>Resume builder web app made using React, TypeScript, Node.js, and MongoDB, with a user-friendly interface, live preview, and secure user authentication.</p>
-                            <p>Role: Developed the Redux slices and the resume preview which is also downloaded then by the user. Added the backend routes and the resume and cover letter controllers and thier mongodb schemas with validation.</p>
-                        </div>
-                        <a href="https://github.com/The-White-Hats/Resumeness" target="_blank" class = "exists" ><img src="images/link.svg" alt=""></a>
-                    </div>
-                    <div class="boxcontent HW">
-                        <img src="images/PixelRush.jpeg" alt="A car in the space">
-                        <div class="projectText">
-                            <h3>Pixel Rush: An x86 Assembly Racing Game</h3>
-                            <p>Developed "Pixel Rush," an 86x assembly racing game with procedurally generated tracks and multiplayer functionality. I focused on track generation algorithms, obstacle/powerup placement, and serial communication.</p>
-                        </div>
-                        <a href="https://github.com/The-White-Hats/Pixel-Rush/" target="_blank" class = "exists"><img src="images/link.svg" alt=""></a>
-                    </div>
-                    <div class="boxcontent HW">
-                        <img src="images/AES.jpeg" alt="FPGA">
-                        <div class="projectText">
-                            <h3>Verilog-based AES Encryption with SPI Integration: FPGA-Optimized Implementation</h3>
-                            <p>Developed AES encryption module in Verilog, integrated with SPI communication protocol, optimized for FPGA deployment, ensuring precise clock timing and component count alignment with FPGA specifications.</p>
-                        </div>
-                        <a href="" ><img src="images/link.svg" alt=""></a>
-                    </div>
-                    <div class="boxcontent PROG">
-                        <img src="images/paint.png" alt="paint">
-                        <div class="projectText">
-                            <h3>Paint App for Kids</h3>
-                            <p>Developed a C++ OOP-based Desktop Paint App for Kids, featuring an intuitive user interface, advanced drawing tools, and object-oriented design for efficient code organization and extensibility.</p>
-                        </div>
-                        <a href="https://github.com/Adham-hussin/Paint-for-Kids" target="_blank"  class = "exists" ><img src="images/link.svg" alt=""></a>
-                    </div>
-                    <div class="boxcontent PROG">
-                        <img src="images/processor.png" alt="scheduler">
-                        <div class="projectText">
-                            <h3>Processes Scheduler</h3>
-                            <p>Implemented a Processes Scheduler for Multiprocessors using C++ OOP and Data Structures, accurately simulating various scheduling algorithms to optimize processor utilization and enhance system performance.</p>
-                        </div>
-                        <a href="https://github.com/Adham-hussin/Processes-Scheduler" target="_blank" class = "exists" ><img src="images/link.svg" alt=""></a>
-                    </div>
-                    <div class="boxcontent PROG">
-                        <img src="images/book_store.png" alt="book store">
-                        <div class="projectText">
-                            <h3>BookStore Desktop App</h3>
-                            <p>Desktop app for a bookstore using Python OOP and PyQt5 for the GUI, featuring a user-friendly interface, linked to Firebase to fetch books and save invoices.</p>
-                        </div>
-                        <a href="https://github.com/Adham-hussin/SDA-Task-Solution" target="_blank" class = "exists" ><img src="images/link.svg" alt=""></a>
-                    </div>
-                    <div class="boxcontent AI">
-                        <img src="images/RPP.jpeg" alt="restaurant">
-                        <div class="projectText">
-                            <h3>Restaurant Popularity Predictor</h3>
-                            <p>A project that uses K means to cluster restaurants in NYC by their popularity and location, and then analyzes the clusters to find the best place to open your new restaurant.</p>                        </div>
-                        <a href="https://github.com/Adham-hussin/Restaurant-Popularity-Predictor" target="_blank"  class = "exists"><img src="images/link.svg" alt=""></a>
-                    </div>
-                    <div class="boxcontent AI">
-                        <img src="images/cat-dog.png" alt="classifier">
-                        <div class="projectText">
-                            <h3>Cat and Dog Classifier</h3>
-                            <p>A project that employs convolutional neural networks (CNNs) to accurately and quickly classify photos of cats and dogs.</p>
-                        </div>
-                        <a href="https://github.com/Adham-hussin/cat-dog_img-classifier" target="_blank"  class = "exists"><img src="images/link.svg" alt=""></a>
-                     </div>
-                    <div class="boxcontent WEB">
-                        <img src="images/landing.png" alt="landing">
-                        <div class="projectText">
-                            <h3>Landing Page</h3>
-                            <p>Crafted a serene and elegant landing page utilizing HTML, CSS, and JS, featuring minimalist design, soothing aesthetics, and subtle animations for a delightful user experience.</p>
-                        </div>
-                        <a href="https://github.com/Adham-hussin/quantum-physics_landing-page" target="_blank" class = "exists" ><img src="images/link.svg" alt=""></a>
-                    </div>
-                    <div class="boxcontent HW">
-                        <img src="images/calculator.jpg" alt="hardware calculator">
-                        <div class="projectText">
-                            <h3>Hardware Calculator</h3>
-                            <p>Designed and implemented a hardware calculator using Logisim, leveraging a diverse range of ICs to create a functional and efficient electronic device for mathematical computations.</p>
-                        </div>
-                        <a href="" ><img src="images/link.svg" alt=""></a>
-                    </div>
-                    
-                </div>
-            </div>
-            <button id="darkMode" onclick="toDarkMode()"><img src="images/dark.svg" alt="Dark Mode"></button>
-            <footer>
-                <div class="contact">
-                    <div id="contactForm">
-                        <h3>Send Me a Message</h3>
-                        <form action="mailto:adhamhusn@gmail.com?subject=Mailto Form Data" method="post">
-                            <input type="text" name="name" placeholder="Name" required>
-                            <input type="email" name="email" placeholder="Email" required>
-                            <div id="someStyle">
-                                <textarea name="message" placeholder="Message" required></textarea>
-                                <button type="submit" value="Send">Submit</button>
+                    <div class="hero-panel">
+                        <div class="signal-card reveal">
+                            <div class="signal-header">
+                                <span class="signal-label">Focus snapshot</span>
+                                <span class="signal-pill">2026 portfolio</span>
                             </div>
-                        </form>
+                            <h3>ML/NLP systems with software quality built in</h3>
+                            <p>
+                                From competition-grade sequence models to production data pipelines, I ship systems that are
+                                measurable, explainable, and resilient.
+                            </p>
+                            <div class="signal-stats">
+                                <div>
+                                    <span class="stat-value">1st</span>
+                                    <span class="stat-label">NLP competition</span>
+                                </div>
+                                <div>
+                                    <span class="stat-value">1.90%</span>
+                                    <span class="stat-label">diacritization DER</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="impact-card reveal">
+                            <p class="impact-title">Recent outcomes</p>
+                            <div class="impact-item">
+                                <span class="impact-value">594K</span>
+                                <div>
+                                    <span class="impact-label">Distributed data scale</span>
+                                    <p class="impact-desc">Telecom churn pipeline in PySpark.</p>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <span class="impact-value">$23.6M</span>
+                                <div>
+                                    <span class="impact-label">Business impact uplift</span>
+                                    <p class="impact-desc">Credit lending model vs approve-all baseline.</p>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <span class="impact-value">300+</span>
+                                <div>
+                                    <span class="impact-label">Quality reliability wins</span>
+                                    <p class="impact-desc">Regression failures resolved at Siemens DISW.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div id="contactInfo">
-                        <h3>Contact Me</h3>
-                        <p>Phone: +20 109 340 1932</p>
-                        <p>Email: adhamhusn@gmail.com</p>
-                    </div>
-                </div>
-                <div class="footerWrapper">
-                    <img src="images/logo1.png" class="logo">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li class= "hide"><a href="#reviews">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                    </ul>
-                </div>
-            </footer> 
+                </section>
 
-            <hr>
+                <section class="section highlights" id="highlights">
+                    <div class="section-header">
+                        <p class="kicker">Highlights</p>
+                        <h2>Impact across ML, data, and QA</h2>
+                        <p class="section-lead">
+                            Evidence-driven outcomes across research, data engineering, and quality automation.
+                        </p>
+                    </div>
+                    <div class="stat-grid">
+                        <article class="stat-card reveal">
+                            <h3>1.90% DER</h3>
+                            <p>Arabic text diacritization with a 9-model ensemble and BiLSTM architecture.</p>
+                        </article>
+                        <article class="stat-card reveal">
+                            <h3>+27.7%</h3>
+                            <p>Portfolio value lift from custom threshold tuning on credit lending models.</p>
+                        </article>
+                        <article class="stat-card reveal">
+                            <h3>8%</h3>
+                            <p>TCL command coverage increase after migrating 200+ test cases.</p>
+                        </article>
+                        <article class="stat-card reveal">
+                            <h3>49 reports</h3>
+                            <p>Issues reported at Siemens DISW, including 4 critical findings.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="section focus" id="focus">
+                    <div class="section-header">
+                        <p class="kicker">What I Do</p>
+                        <h2>Building blocks for ML-driven products</h2>
+                        <p class="section-lead">I balance model design, data systems, and rigorous QA to ship reliable ML.</p>
+                    </div>
+                    <div class="card-grid">
+                        <article class="info-card reveal">
+                            <h3>NLP and Sequence Modeling</h3>
+                            <p>BiLSTM ensembles, frozen transformers, and ablation-driven experiments.</p>
+                            <span class="card-tag">AraBERT, Word2Vec, PyTorch</span>
+                        </article>
+                        <article class="info-card reveal">
+                            <h3>Data Systems and ML Ops</h3>
+                            <p>Distributed pipelines, custom MapReduce algorithms, and model lifecycle tracking.</p>
+                            <span class="card-tag">PySpark, MLflow, FastAPI</span>
+                        </article>
+                        <article class="info-card reveal">
+                            <h3>Quality Engineering</h3>
+                            <p>Automation libraries, regression analysis, and cross-team release readiness.</p>
+                            <span class="card-tag">Squish, Cypress, EDA tools</span>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="section projects" id="projects" data-section>
+                    <div class="section-header">
+                        <p class="kicker">Selected Projects</p>
+                        <h2>ML/NLP and data-forward builds</h2>
+                        <p class="section-lead">
+                            The portfolio is driven by data below. Add a new project in the JS array to extend the grid.
+                        </p>
+                    </div>
+                    <div class="filter-bar">
+                        <div id="projectFilters" class="filter-buttons"></div>
+                        <div class="filter-meta"><span id="projectCount">0</span> projects</div>
+                    </div>
+                    <div id="projectGrid" class="project-grid"></div>
+                </section>
+
+                <section class="section experience" id="experience" data-section>
+                    <div class="section-header">
+                        <p class="kicker">Experience</p>
+                        <h2>QA, automation, and engineering impact</h2>
+                        <p class="section-lead">Hands-on delivery across Siemens DISW and academic projects.</p>
+                    </div>
+                    <div class="timeline">
+                        <article class="timeline-item reveal">
+                            <div class="timeline-time">Jul 2025 - Dec 2025</div>
+                            <h3>QA and Test Automation Intern - Siemens DISW, Cairo</h3>
+                            <ul>
+                                <li>Validated 63 issues (18 ERs, 45 bugs) and reported 49, including 4 critical.</li>
+                                <li>Extended Squish Python automation for coordinate-independent GUI testing.</li>
+                                <li>Resolved about 300 regression failures in the Questa One EDA tool.</li>
+                                <li>Built a POC pipeline for automated visual reference updates.</li>
+                                <li>Coordinated with R&D, QA, and DevOps teams across four countries.</li>
+                                <li>Contributed to the 2025.3 release checklist.</li>
+                            </ul>
+                        </article>
+                        <article class="timeline-item reveal">
+                            <div class="timeline-time">Jul 2024 - Dec 2024</div>
+                            <h3>QA and Test Engineering Intern - Siemens DISW, Cairo</h3>
+                            <ul>
+                                <li>Migrated 200+ test cases and achieved an 8% increase in TCL command coverage.</li>
+                                <li>Manual testing across 500+ TCL commands for the Visualizer EDA tool.</li>
+                            </ul>
+                        </article>
+                        <article class="timeline-item reveal">
+                            <div class="timeline-time">Jul 2023 - Sep 2023</div>
+                            <h3>Web Development Intern - Cairo University</h3>
+                            <ul>
+                                <li>Built a portfolio site with JS, HTML, and SASS.</li>
+                                <li>Shipped a resume-builder web app using React, TypeScript, and Node.js.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="section skills" id="skills" data-section>
+                    <div class="section-header">
+                        <p class="kicker">Skills</p>
+                        <h2>Tools and platforms</h2>
+                    </div>
+                    <div class="skill-grid">
+                        <article class="skill-card reveal">
+                            <h3>ML and AI</h3>
+                            <div class="chip-group">
+                                <span class="chip">Python</span>
+                                <span class="chip">scikit-learn</span>
+                                <span class="chip">XGBoost</span>
+                                <span class="chip">CatBoost</span>
+                                <span class="chip">PyTorch</span>
+                                <span class="chip">BiLSTM</span>
+                                <span class="chip">AraBERT</span>
+                                <span class="chip">Word2Vec</span>
+                                <span class="chip">NLTK</span>
+                                <span class="chip">MLflow</span>
+                                <span class="chip">FastAPI</span>
+                                <span class="chip">Hugging Face</span>
+                            </div>
+                        </article>
+                        <article class="skill-card reveal">
+                            <h3>Data and Big Data</h3>
+                            <div class="chip-group">
+                                <span class="chip">PySpark</span>
+                                <span class="chip">Spark MLlib</span>
+                                <span class="chip">Databricks</span>
+                                <span class="chip">Pandas</span>
+                                <span class="chip">Matplotlib</span>
+                                <span class="chip">Seaborn</span>
+                                <span class="chip">SQL</span>
+                                <span class="chip">PostgreSQL</span>
+                                <span class="chip">MongoDB</span>
+                                <span class="chip">FRED API</span>
+                            </div>
+                        </article>
+                        <article class="skill-card reveal">
+                            <h3>QA and Automation</h3>
+                            <div class="chip-group">
+                                <span class="chip">Squish</span>
+                                <span class="chip">Cypress</span>
+                                <span class="chip">Flutter Integration Testing</span>
+                                <span class="chip">TCL</span>
+                                <span class="chip">EDA Tools</span>
+                                <span class="chip">Perforce</span>
+                                <span class="chip">JIRA</span>
+                            </div>
+                        </article>
+                        <article class="skill-card reveal">
+                            <h3>Engineering</h3>
+                            <div class="chip-group">
+                                <span class="chip">C++</span>
+                                <span class="chip">Git</span>
+                                <span class="chip">GitHub Actions</span>
+                                <span class="chip">Docker</span>
+                                <span class="chip">Linux</span>
+                                <span class="chip">Shell</span>
+                                <span class="chip">React</span>
+                                <span class="chip">TypeScript</span>
+                                <span class="chip">Node.js</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="section education" id="education" data-section>
+                    <div class="section-header">
+                        <p class="kicker">Education</p>
+                        <h2>Academic background</h2>
+                    </div>
+                    <div class="education-grid">
+                        <article class="edu-card reveal">
+                            <h3>B.Sc. Computer Engineering - Cairo University</h3>
+                            <p>Oct 2021 - Jul 2026 (Expected)</p>
+                            <p>Grade: 88.82%</p>
+                        </article>
+                        <article class="edu-card reveal">
+                            <h3>Leadership</h3>
+                            <p>Vice-Head, Software and Automation Development</p>
+                            <p>Cairo University Racing Team (CURT), Sep 2023 - Present</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="section contact" id="contact" data-section>
+                    <div class="contact-card reveal">
+                        <div>
+                            <p class="kicker">Contact</p>
+                            <h2>Ready to collaborate on ML and software systems</h2>
+                            <p class="section-lead">
+                                Reach out for ML/NLP projects, data systems work, or quality engineering collaboration.
+                            </p>
+                        </div>
+                        <div class="contact-grid">
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:adhamhusn@gmail.com">adhamhusn@gmail.com</a>
+                            </div>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+201093401932">+20 109 340 1932</a>
+                            </div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span>Cairo, Egypt</span>
+                            </div>
+                        </div>
+                        <div class="contact-actions">
+                            <a class="btn primary" href="mailto:adhamhusn@gmail.com">Start a conversation</a>
+                            <a class="btn ghost" href="files/AdhamHussinResume.pdf" download>Download CV</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="site-footer">
+                <div class="footer-inner">
+                    <div>
+                        <span class="logo">Adham Hussin</span>
+                        <p class="footer-note">ML/NLP, data systems, and software engineering.</p>
+                    </div>
+                    <div class="footer-links">
+                        <a href="https://github.com/adham-hussin/" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://linkedin.com/in/adham-hussin-866632142" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="mailto:adhamhusn@gmail.com">Email</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span>Copyright <span id="year"></span> Adham Hussin</span>
+                </div>
+            </footer>
         </div>
-        <script src="scripts/script.js"></script>
-    </body>
 
+        <script src="scripts/script.js" defer></script>
+    </body>
 </html>
